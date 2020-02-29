@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 group :test do
-  gem 'rake', '< 11.0'
+  gem 'rake', '>= 12.3.3'
   gem 'xmlrpc'
   gem "puppet", ENV['PUPPET_VERSION'] || '>= 2.7.0'
   gem "puppet-lint"
@@ -10,3 +10,4 @@ group :test do
   gem "puppet-syntax"
   gem "puppetlabs_spec_helper"
 end
+
